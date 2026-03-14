@@ -154,36 +154,253 @@ PALETTE: "Cyber & Deep Space" (Deep Slate #0f172a, Cyan #22d3ee, Indigo #818cf8,
 
         </div>
     </section>
-    
-    <!-- ✨ GEMINI API INTEGRATION SECTION ✨ -->
-    <section class="mt-16 glass-card rounded-2xl p-8 max-w-4xl mx-auto border-t-4 border-cyan-400 shadow-2xl">
-        <div class="text-center mb-6">
-            <h2 class="text-3xl font-bold text-cyan-300 mb-2">✨ Ask the AI ESG Strategist ✨</h2>
-            <p class="text-slate-400 text-sm">Powered by Gemini. Enter your industry and biggest sustainability challenge to get a custom, actionable AI-driven optimization plan.</p>
+    <div class="container">
+        <div class="stats-grid fade-in">
+            <div class="stat-card">
+                <div class="stat-value">17</div>
+                <div class="stat-label">Countries Tracked</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value">60%</div>
+                <div class="stat-label">Scope 1&2 Measured Drop</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value">44%</div>
+                <div class="stat-label">Renewable Portfolio</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value">50+</div>
+                <div class="stat-label">Biodiversity Sites Mapped</div>
+            </div>
         </div>
-        
-        <div class="space-y-4">
-            <textarea id="esg-input" rows="3" class="w-full bg-slate-900 border border-slate-600 rounded-lg p-4 text-slate-200 focus:outline-none focus:border-cyan-400 focus:ring-1 focus:ring-cyan-400 transition-colors" placeholder="e.g., 'We are a logistics company struggling with high Scope 1 emissions from our delivery fleet.'"></textarea>
-            
-            <button onclick="generateStrategy()" class="w-full md:w-auto px-8 py-3 bg-gradient-to-r from-cyan-600 to-indigo-600 hover:from-cyan-500 hover:to-indigo-500 text-white font-bold rounded-lg shadow-lg transition-transform transform hover:scale-105 flex justify-center items-center">
-                Generate Strategy ✨
-            </button>
-        </div>
+    </div>
 
-        <div id="esg-loading" class="hidden mt-8 text-center flex flex-col items-center justify-center space-y-4">
-            <div class="w-10 h-10 border-4 border-slate-600 border-t-cyan-400 rounded-full animate-spin"></div>
-            <p class="text-cyan-300 animate-pulse text-sm font-semibold">Gemini is analyzing your challenge...</p>
-        </div>
+    <!-- SECTION 1: PHYSICAL COLLECTION -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2>1. Primary Activity Data Collection</h2>
+                <p>The physical instruments and operational logs utilized across EXL facilities to capture raw environmental metrics.</p>
+            </div>
 
-        <div id="esg-output" class="hidden mt-8 p-6 bg-slate-800/50 border border-slate-700 rounded-lg text-slate-300 leading-relaxed">
-            <!-- Gemini Response will be injected here -->
+            <div class="grid-4">
+                <!-- Card 1 -->
+                <div class="info-card fade-in">
+                    <div class="icon-box">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+                    </div>
+                    <h3>Facility Energy</h3>
+                    <p>Capturing electricity and natural gas consumption required for Scope 1 & 2 base calculations.</p>
+                    <div class="tag-list">
+                        <span class="tag">Utility Invoices</span>
+                        <span class="tag">Smart Meters</span>
+                        <span class="tag">Monthly/Real-time</span>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="info-card fade-in" style="transition-delay: 0.1s;">
+                    <div class="icon-box">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 17h2c.6 0 1-.4 1-1v-3c0-.9-.7-1.7-1.5-1.9C18.7 10.6 16 10 16 10s-1.3-1.4-2.2-2.3c-.5-.4-1.1-.7-1.8-.7H5c-.6 0-1 .4-1 1v10h2"/><circle cx="7" cy="17" r="2"/><circle cx="17" cy="17" r="2"/></svg>
+                    </div>
+                    <h3>Fleet Tracking</h3>
+                    <p>Monitoring fuel consumption and mileage for company-owned passenger cars and light vans.</p>
+                    <div class="tag-list">
+                        <span class="tag">GPS Telematics</span>
+                        <span class="tag">Fuel Receipts</span>
+                        <span class="tag">Odometer Logs</span>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="info-card fade-in" style="transition-delay: 0.2s;">
+                    <div class="icon-box">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+                    </div>
+                    <h3>Fugitive Emissions</h3>
+                    <p>Detecting refrigerant leakage from HVAC systems to track highly potent greenhouse gases.</p>
+                    <div class="tag-list">
+                        <span class="tag">Maintenance Logs</span>
+                        <span class="tag">HFC-410A / R-134a</span>
+                        <span class="tag">Semi-Annual Audits</span>
+                    </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="info-card fade-in" style="transition-delay: 0.3s;">
+                    <div class="icon-box">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"/></svg>
+                    </div>
+                    <h3>Water & Nature</h3>
+                    <p>Tracking municipal water intake and mapping ecosystem dependency across 50+ locations.</p>
+                    <div class="tag-list">
+                        <span class="tag">Facility Meters</span>
+                        <span class="tag">IBAT Tool</span>
+                        <span class="tag">ENCORE & WWF BRF</span>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
-    <!-- END GEMINI API INTEGRATION SECTION -->
 
-    <footer class="mt-16 pt-8 border-t border-slate-800 text-center text-xs text-slate-600">
-        <p>AI ESG Optimization Dashboard &copy; 2026. Interactive elements rendered via HTML5 Canvas and WebGL.</p>
-    </footer>
+    <!-- SECTION 2: VALIDATION & CALCULATIONS -->
+    <section class="section" style="background-color: white;">
+        <div class="container">
+            <div class="grid-2">
+                <div class="fade-in">
+                    <h2>2. Centralized Processing & Validation</h2>
+                    <p style="color: var(--text-muted); margin-bottom: 24px;">Data from 17 operating countries flows into EXL's centralized environmental management platform. Before raw data is converted into CO₂e, it passes through a rigorous, formal three-stage validation pipeline.</p>
+                    
+                    <div style="background: var(--bg-color); padding: 20px; border-radius: 12px; border: 1px solid var(--border-color); margin-bottom: 24px;">
+                        <h4 style="font-size: 14px; margin-bottom: 10px; color: var(--exl-dark-green);">Core Calculation Engine Sources:</h4>
+                        <div class="tag-list">
+                            <span class="tag">EPA (US)</span>
+                            <span class="tag">DEFRA (UK/Ireland)</span>
+                            <span class="tag">CGER (India)</span>
+                            <span class="tag">IPCC Tier 2</span>
+                            <span class="tag">Ecoinvent</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="process-flow fade-in">
+                    <div class="line-connector"></div>
+                    
+                    <div class="process-step">
+                        <div class="step-number">1</div>
+                        <div class="step-content">
+                            <h4>Import Stage</h4>
+                            <p>Automated verification of mandatory fields, data types, and file formatting upon ingestion.</p>
+                            <span class="error-tag">Catches: Missing data, malformed entries</span>
+                        </div>
+                    </div>
+
+                    <div class="process-step">
+                        <div class="step-number">2</div>
+                        <div class="step-content">
+                            <h4>Calculation Stage</h4>
+                            <p>Activity data is mapped to specific geographic emission factors. System flags input outliers.</p>
+                            <span class="error-tag">Catches: Inconsistent scoping, outlier volumes</span>
+                        </div>
+                    </div>
+
+                    <div class="process-step">
+                        <div class="step-number">3</div>
+                        <div class="step-content">
+                            <h4>Post-Import Review</h4>
+                            <p>Historical trend comparison. Variances over 5% trigger formal recalculation policies.</p>
+                            <span class="error-tag">Catches: Sudden spikes indicating entry errors</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 3: INNOVATIVE TRACKING -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2>3. Tracking Methodologies</h2>
+                <p>How EXL traces its value chain and renewable energy coverage accurately.</p>
+            </div>
+
+            <div class="innovation-box fade-in">
+                <h3 style="font-size: 24px; margin-bottom: 12px;">Service-Level Accounting (SLA) for Scope 3</h3>
+                <p style="opacity: 0.9; max-width: 800px;">EXL transitioned from generic spend-based estimation (revenue share) to precise, unit-based tracking for key suppliers, allowing procurement to differentiate vendors based on actual carbon intensity. As of 2024, <strong>45% of top-spend suppliers</strong> responded to this detailed disclosure.</p>
+
+                <div class="vs-grid">
+                    <div class="vs-card">
+                        <h4>Legacy Approach (Spend-Based)</h4>
+                        <p>Supplier's Total Emissions × (EXL Spend / Supplier Revenue)</p>
+                        <ul style="font-size: 12px; color: rgba(255,255,255,0.7); margin-left: 16px;">
+                            <li>Allocates entire company footprint proportionally</li>
+                            <li>Relies heavily on Ecoinvent averages</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="vs-divider">VS</div>
+
+                    <div class="vs-card" style="background: rgba(29, 158, 117, 0.2); border-color: var(--exl-green);">
+                        <h4 style="color: #fff;">EXL SLA Approach (Unit-Based)</h4>
+                        <p>(Service Emissions / Units Delivered) × EXL Consumption</p>
+                        <ul style="font-size: 12px; color: rgba(255,255,255,0.9); margin-left: 16px;">
+                            <li>e.g., mtCO₂e per MWh or per person-month</li>
+                            <li>Allocates based purely on actual service consumption</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid-2" style="margin-top: 24px;">
+                <div class="info-card fade-in">
+                    <h3>Dual Scope 2 Reporting</h3>
+                    <p>EXL strictly tracks electricity under both GHG Protocol mandates to isolate the impact of its renewable procurement.</p>
+                    <ul style="font-size: 13px; color: var(--text-muted); margin-left: 16px; margin-bottom: 16px;">
+                        <li><strong>Location-Based:</strong> ~52,300 mtCO₂e (Grid Averages)</li>
+                        <li><strong>Market-Based:</strong> ~13,380 mtCO₂e (Actual PPAs/RECs)</li>
+                    </ul>
+                    <div class="tag-list">
+                        <span class="tag">Solar PPAs (India)</span>
+                        <span class="tag">RECs (US/UK/IRE)</span>
+                        <span class="tag">On-Site Solar</span>
+                    </div>
+                </div>
+
+                <div class="info-card fade-in">
+                    <h3>Intensity Metric Benchmarking</h3>
+                    <p>Absolute emissions don't tell the whole story. EXL tracks energy intensity to compare facilities of different sizes globally.</p>
+                    <div style="background: var(--bg-color); padding: 16px; border-radius: 8px; margin-top: 16px;">
+                        <span style="font-family: monospace; font-size: 14px; font-weight: 600; color: var(--exl-dark-green);">Energy Intensity Ratio</span>
+                        <p style="margin: 4px 0 0 0; font-size: 13px;">Total Facility Energy (kWh) ÷ Usable Facility Area (m²)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 4: AUDIT & REPORTING -->
+    <section class="section" style="background-color: white;">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2>4. Disclosure & Assurance</h2>
+                <p>Outputting the collected and validated data to global rating agencies and third-party auditors to ensure financial-grade transparency.</p>
+            </div>
+
+            <div class="reporting-grid fade-in">
+                <div class="report-badge">
+                    <div class="rb-score">14064</div>
+                    <div class="rb-text">
+                        <h5>ISO 14064-3</h5>
+                        <span>Limited Assurance Audit</span>
+                    </div>
+                </div>
+
+                <div class="report-badge">
+                    <div class="rb-score">A/B</div>
+                    <div class="rb-text">
+                        <h5>CDP Disclosures</h5>
+                        <span>Supply Chain (A) / Climate (B)</span>
+                    </div>
+                </div>
+
+                <div class="report-badge">
+                    <div class="rb-score">98th</div>
+                    <div class="rb-text">
+                        <h5>Ecovadis Gold</h5>
+                        <span>81/100 Percentile Ranking</span>
+                    </div>
+                </div>
+
+                <div class="report-badge">
+                    <div class="rb-score">AA</div>
+                    <div class="rb-text">
+                        <h5>MSCI ESG</h5>
+                        <span>Recognized as Leader</span>
+                    </div>
+                </div>
+            </div>
+
 
 </div>
 
